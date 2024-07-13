@@ -1,0 +1,20 @@
+<!-- listado.component.html -->
+
+<div class="container">
+    <div class="buscar">
+      <input type="text" [(ngModel)]="nombre" placeholder="Buscar por nombre...">
+      <button (click)="buscar()">Buscar</button>
+    </div>
+  
+    <div class="contenido-buscar"><p [hidden]="pokemon.tipo == '' ">tipo:{{pokemon.tipo}}</p>
+        <p [hidden]="pokemon.ataque == '' ">ataque:{{pokemon.ataque}}</p>
+        <p [hidden]="pokemon.puntossalud== '' ">ptssalud:{{pokemon.puntossalud}}</p>
+        <p [hidden]="pokemon.puntosdefensa== '' ">ptsdefensa:{{pokemon.puntosdefensa}}</p>
+        <p [hidden]="pokemon.puntosvelocidad== '' ">ptsvelocidad:{{pokemon.puntosvelocidad}}</p>
+        <p [hidden]="pokemon.puntosataque== '' ">ptsataque:{{pokemon.puntosataque}}</p>
+        <p [hidden]="pokemon.puntosdfespecial== '' ">ptsdfespecial:{{pokemon.puntosdfespecial}}</p>
+        <img [src]="pokemon.foto" alt="">
+        <img [src]="pokemon.ftespalda" alt="">
+    </div>
+  </div>
+  
