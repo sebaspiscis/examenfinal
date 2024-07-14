@@ -5,8 +5,8 @@ import { ListadoComponent } from './listado/listado.component';
 
 
 export const routes: Routes = [
-    {path: '', component: HomeComponent},
-    {path: 'buscador', component: BuscadorComponent},
-    {path: 'listado', component: ListadoComponent},
+    {path: '/examenfinal/', component: HomeComponent},
+    {path: '/examenfinal/buscador', component: BuscadorComponent},
+    {path: '/examenfinal/listado', component: ListadoComponent},
 ];
 
